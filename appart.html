@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Log'étu</title>
+
+    <link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+   
+    </head>
+    <body>
+      <header>
+        <nav>
+          <ul>
+            <li id="logo"><a href="index.html">Log'étu</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="connexion.php">Réserver</a></li>
+            <li><a href="index.html#logement">Nos logements</a></li>
+            <li>
+              <input type="search" value="" id="search" onchange="openPage()"placeholder="Saisir une ville">
+              <script>
+                 function openPage() {
+                  var x = document.getElementById("search").value;
+              
+                  if (x.toLowerCase() == "paris") {
+                      open("paris.html", "_self");
+                  }
+                   else if (x.toLowerCase() == "marseille") {
+                      open("marseille.html", "_self");
+                  }
+                  else if (x.toLowerCase() == "lyon") {
+                      open("lyon.html", "_self");
+                  }
+                  else if (x.toLowerCase() == "nantes") {
+                      open("nantes.html", "_self");
+                  } else if (x.toLowerCase() == "orleans") {
+                      open("orleans.html", "_self");
+                  }else if (x.toLowerCase == "lille") {
+                      open("lille.html", "_self");
+                  }
+              }
+              </script>
+       </li>
+          </ul>
+        </nav>
+<!------------------------------en-tête--------------------------->
+        <div id="imgappart">
+          <h5>Appartements</h5>
+         </div>
+<!-------------------------------les +/- --------------------------->
+<section id="apparts">
+ <table>
+   <tr>
+     <td><h6>Le + des appartements</h6></td><TD>&nbsp;</TD> 
+     <td><h6>Le - des appartements</h6></td></tr>
+     <td width="50%">- logement personnalisable
+       <br>- logement (de temps en temps) meublé et équipé
+      <br>- salle d'eau avec WC dans la chambre (ou WC commun à tous les étudiants dans le couloir)
+      <br>- intimité respectée
+      <br>- moins cher et peut-être plus grand</td> <TD>&nbsp;</TD> 
+      <td width="50%">- logement (de temps en temps) non meublé et équipé 
+        <br>- pas de service à disposition
+        <br>- solitude</td>
+    </tr>
+</table>
+
+<!----------------------------SITES---------------------------->
+<div>
+  <h6>
+      Les différents sites pour rechercher un appartement
+  </h6>
+  <div id="table2">
+    <table>
+      <tr><td>lodgis</td>
+          <td><a href="https://www.lodgis.com/fr"><img src="media\lodgis.PNG" width="100px"></a></td>  
+      </tr>
+      <tr><td>ParuVendu.fr</td>
+          <td><a href="https://www.paruvendu.fr/"><img src="media\paruvendu.fr.PNG" width="100px"></a></td>
+      </tr> 
+      <tr><td>Paris Attitude (pour Paris)</td>
+          <td><a href="https://www.parisattitude.com/fr/locataire/location-meublee-etudiants.aspx"><img src="media\paris-attitude.PNG" width="100px"></a></td>
+      </tr> 
+      <tr><td>pap</td>
+        <td><a href="https://www.pap.fr/locataire"><img src="media\pap.PNG" width="100px"></a></td>
+    </tr>
+    <tr><td>lokaviz</td>
+      <td><a href="https://www.lokaviz.fr/rechercher-un-logement/"><img src="media\lokaviz.PNG" width="100px"></a></td>
+    </tr>
+  </table>
+</div>
+<div id="table1">
+    <table>
+    <tr><td>Immojeune</td>
+        <td><a href="https://www.immojeune.com/"><img src="media\immojeune.PNG" width="100px"></a></td>
+    </tr> 
+    <tr><td>locservice</td>
+        <td><a href="https://www.locservice.fr/"><img src="media\locservice.PNG" width="100px"></a></td>
+    </tr> 
+    <tr><td>leboncoin</td>
+      <td><a href="https://www.leboncoin.fr/locations/offres"><img src="media\leboncoin.PNG" width="100px"></a></td>
+  </tr>
+  <tr><td>logic-immo</td>
+    <td><a href="https://www.logic-immo.com/"><img src="media\logicimmo.PNG" width="50px"></a></td>
+</tr>
+<tr><td>location-etudiant</td>
+  <td><a href="https://www.location-etudiant.fr/"><img src="media\location-etudiante.PNG" width="100px"></a></td>
+</tr>
+
+  </table>
+</div>
+</section>
+
+  <!----------------------- VILLES------------------------>
+
+</header>
+<section id="presentation">
+<div id="texteIntro">
+  <h2>Votre logement étudiant en France</h2>
+  </div>
+<div id="prestations">
+  <div class="imagesPrestations">
+    <h4>Paris</h4>
+    <a href="paris.html"><img src="media\paris.jpg" alt="paris"></a>
+  </div>
+  <div class="imagesPrestations">
+    <h4>Marseille</h4>
+    <a href="marseille.html"><img src="media\marseille-france.webp" alt="marseille"></a>
+  </div>
+  <div class="imagesPrestations">
+    <h4>Lyon</h4>
+    <a href="lyon.html"><img src="media\lyon.jpg" alt="lyon"></a>
+  </div> 
+  <div class="imagesPrestations">
+    <h4>Nantes</h4>
+    <a href="nantes.html"><img src="media\nantes.jpg" alt="nantes"></a>
+  </div>
+  <div class="imagesPrestations">
+    <h4>Lille</h4>
+    <a href="lille.html"><img src="media\lille.jpg" alt="lille"></a>
+  </div>
+  <div class="imagesPrestations">
+    <h4>Orléans</h4>
+    <a href="orleans.html"><img src="media\orleans.jpg" alt="orleans"></a>
+  </div>
+</div>
+
+
+  <!-----------------------FOOTER---------------------------->  
+      <footer>
+        <div id="deuxiemeTrait"></div>
+        <div id="copyrightEtIcons">
+          <div id="copyright">
+            <span>© fromScratch(); 2022</span>
+          </div>
+          <div id="icons">
+            <a href="http://www.twitter.fr"><i class="fa fa-twitter"></i></a>
+            <a href="http://www.facebook.fr"><i class="fa fa-facebook"></i></a>
+            <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
+  
+          </div>
+        </div>
+  
+      </footer>
+    </body>
+  
+  </html>
+
+ 

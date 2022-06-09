@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Log'étu</title>
+
+    <link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li id="logo"><a href="index.html">Log'étu</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="connexion.php">Réserver</a></li>
+          <li><a href="index.html#logement">Nos logements</a></li>
+          <li>
+            <input type="search" value="" id="search" onchange="openPage()"placeholder="Saisir une ville">
+            <script>
+               function openPage() {
+                var x = document.getElementById("search").value;
+            
+                if (x.toLowerCase() == "paris") {
+                    open("paris.html", "_self");
+                }
+                 else if (x.toLowerCase() == "marseille") {
+                    open("marseille.html", "_self");
+                }
+                else if (x.toLowerCase() == "lyon") {
+                    open("lyon.html", "_self");
+                }
+                else if (x.toLowerCase() == "nantes") {
+                    open("nantes.html", "_self");
+                } else if (x.toLowerCase() == "orleans") {
+                    open("orleans.html", "_self");
+                }else if (x.toLowerCase == "lille") {
+                    open("lille.html", "_self");
+                }
+            }
+            </script>
+     </li>
+        </ul>
+      </nav>
+<!------------------------------en-tête--------------------------->
+      <div id="imgfoyer">
+        <h5>Foyers étudiants</h5>
+       </div>
+
+<!-------------------------------les +/- --------------------------->
+<section id="foyers">
+<table>
+<tr>
+<td><h6>Le + des foyers étudiants</h6></td><TD>&nbsp;</TD> 
+<td><h6>Le - des foyers étudiants</h6></td></tr>
+<td width="50%">- ambiance familiale
+<br>- logement meublé et équipé
+<br>- demi-pension ou formule petit déjeuner
+<br>- activités entre jeunes</td> <TD>&nbsp;</TD> 
+<td width="50%">- réglement intérieur strict 
+<br>- salle de bain et WC partagés
+<br>- manque d'intimité</td>
+</tr>
+</table>
+
+<!----------------------------SITES---------------------------->
+<div>
+<h6>
+Les différents sites de foyers étudiants
+</h6>
+
+
+<div id="table1">
+<table>
+  <tr><td>foyersetudiants.org</td>
+    <td><a href="https://www.foyersetudiants.org/fr/"><img src="media\foyersetudiants.org.PNG" width="100px"></a></td>
+    </tr>
+    <tr><td>unme</td>
+<td><a href="https://www.unme-asso.com/"><img src="media\unme.PNG" width="100px"></a></td>
+</tr>
+<tr><td>paris.catholique</td>
+  <td><a href="https://www.paris.catholique.fr/-les-foyers-etudiants-.html"><img src="media\paris.catholique.PNG" width="100px"></a></td>  
+</tr>
+<tr><td>SERVIAM (Paris)</td>
+<td><a href="https://www.foyer-catho-serviam.com/"><img src="media\foyer-catho-serviam.PNG" width="50px"></a></td>
+</tr> 
+<tr><td>Foyer International des Etudiantes (Paris)</td>
+<td><a href="https://www.fie.fr/"><img src="media\foyer international des etudiantes.PNG" width="100px"></a></td>
+</tr> 
+
+<tr><td>foyer simplon (Paris)</td>
+<td><a href="https://www.foyersetudiants.org/fr/paris18-simplon/"><img src="media\foyer simplon.PNG" width="50px"></a></td>
+</tr>
+</table>
+</div>
+</section>
+
+<!----------------------- VILLES------------------------>
+
+</header>
+<section id="presentation">
+<div id="texteIntro">
+<h2>Votre logement étudiant en France</h2>
+</div>
+<div id="prestations">
+<div class="imagesPrestations">
+<h4>Paris</h4>
+<a href="paris.html"><img src="media\paris.jpg" alt="paris"></a>
+</div>
+<div class="imagesPrestations">
+<h4>Marseille</h4>
+<a href="marseille.html"><img src="media\marseille-france.webp" alt="marseille"></a>
+</div>
+<div class="imagesPrestations">
+<h4>Lyon</h4>
+<a href="lyon.html"><img src="media\lyon.jpg" alt="lyon"></a>
+</div> 
+<div class="imagesPrestations">
+<h4>Nantes</h4>
+<a href="nantes.html"><img src="media\nantes.jpg" alt="nantes"></a>
+</div>
+<div class="imagesPrestations">
+<h4>Lille</h4>
+<a href="lille.html"><img src="media\lille.jpg" alt="lille"></a>
+</div>
+<div class="imagesPrestations">
+<h4>Orléans</h4>
+<a href="orleans.html"><img src="media\orleans.jpg" alt="orleans"></a>
+</div>
+</div>
+
+
+
+
+      
+     <!-----------------------FOOTER---------------------------->  
+     <footer>
+      <div id="deuxiemeTrait"></div>
+      <div id="copyrightEtIcons">
+        <div id="copyright">
+          <span>© fromScratch(); 2022</span>
+        </div>
+        <div id="icons">
+          <a href="http://www.twitter.fr"><i class="fa fa-twitter"></i></a>
+          <a href="http://www.facebook.fr"><i class="fa fa-facebook"></i></a>
+          <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
+
+        </div>
+      </div>
+
+    </footer>
+  </body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Log'étu</title>
+
+    <link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li id="logo"><a href="index.html">Log'étu</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="connexion.php">Réserver</a></li>
+          <li><a href="index.html#logement">Nos logements</a></li>
+          <li>
+            <input type="search" value="" id="search" onchange="openPage()"placeholder="Saisir une ville">
+            <script>
+                function openPage() {
+                  var x = document.getElementById("search").value;
+              
+                  if (x.toLowerCase() == "paris") {
+                      open("paris.html", "_self");
+                  }
+                   else if (x.toLowerCase() == "marseille") {
+                      open("marseille.html", "_self");
+                  }
+                  else if (x.toLowerCase() == "lyon") {
+                      open("lyon.html", "_self");
+                  }
+                  else if (x.toLowerCase() == "nantes") {
+                      open("nantes.html", "_self");
+                  } else if (x.toLowerCase() == "orleans") {
+                      open("orleans.html", "_self");
+                  }else if (x.toLowerCase == "lille") {
+                      open("lille.html", "_self");
+                  }
+              }
+            </script>
+     </li>
+        </ul>
+      </nav>
+<!-------------------------------en-tête---------------------------->
+      <div id="imgcoloc">
+        <h5>Colocation</h5>
+       </div>
+<!-------------------------------les +/- --------------------------->
+<section id="colocs">
+  <table>
+    <tr>
+      <td><h6>Le + des colocations</h6></td><TD>&nbsp;</TD> 
+      <td><h6>Le - des colocations</h6></td></tr>
+      <td width="50%"> - logement meublé et équipé
+        <br>- solution moins onéreuse
+       <br>- spatieux et confortable
+       <br>- moins seul, collectivité</td> <TD>&nbsp;</TD> 
+       <td width="50%">- logement à partager avec d'autres personnes
+         <br>- pas de service à disposition</td>
+     </tr>
+ </table>
+
+ <!----------------------------SITES---------------------------->
+<div>
+    <h6>
+      Les différents sites pour rechercher une colocation
+    </h6>
+  </div>
+  <div id="table2">
+    <table>
+      <tr><td>Whoomies</td>
+        <td><a href="https://whoomies.com/"><img src="media\Whoomies.PNG" width="100px"></a></td>  
+    </tr>
+    <tr><td>Appartoo</td>
+      <td><a href="https://www.appartoo.com/"><img src="media\appartoo.PNG" width="100px"></a></td>  
+  </tr>
+  
+  <tr><td>locservice</td>
+    <td><a href="https://www.locservice.fr/"><img src="media\locservice.PNG" width="100px"></a></td>
+</tr> 
+<tr><td>leboncoin</td>
+  <td><a href="https://www.leboncoin.fr/colocations/offres"><img src="media\leboncoin.PNG" width="100px"></a></td>
+</tr>
+
+
+  </table>
+</div>
+<div id="table1">
+    <table>
+      <tr><td>colonies</td>
+        <td><a href="https://www.livecolonies.com/supercoloc"><img src="media\colonies.PNG" width="100px"></a></td>  
+    </tr>
+    <tr><td>Immojeune</td>
+      <td><a href="https://www.immojeune.com/"><img src="media\immojeune.PNG" width="100px"></a></td>
+  </tr> 
+  <tr><td>La carte des colocs</td>
+    <td><a href="https://www.lacartedescolocs.fr/colocations/fr/"><img src="media\la carte des colocs.PNG" width="100px"></a></td>
+</tr> 
+<tr><td>Appartager</td>
+  <td><a href="https://www.appartager.com/"><img src="media\appartager.PNG" width="100px"></a></td>
+</tr> 
+</table>
+</div>
+</section>
+</header>
+  <!----------------------- VILLES------------------------>
+
+<section id="presentation">
+<div id="texteIntro">
+  <h2>Votre logement étudiant en France</h2>
+  </div>
+<div id="prestations">
+  <div class="imagesPrestations">
+    <h4>Paris</h4>
+    <a href="paris.html"><img src="media\paris.jpg" alt="paris"></a>
+  </div>
+  <div class="imagesPrestations">
+    <h4>Marseille</h4>
+    <a href="marseille.html"><img src="media\marseille-france.webp" alt="marseille"></a>
+  </div>
+  <div class="imagesPrestations">
+    <h4>Lyon</h4>
+    <a href="lyon.html"><img src="media\lyon.jpg" alt="lyon"></a>
+  </div> 
+  <div class="imagesPrestations">
+    <h4>Nantes</h4>
+    <a href="nantes.html"><img src="media\nantes.jpg" alt="nantes"></a>
+  </div>
+  <div class="imagesPrestations">
+    <h4>Lille</h4>
+    <a href="lille.html"><img src="media\lille.jpg" alt="lille"></a>
+  </div>
+  <div class="imagesPrestations">
+    <h4>Orléans</h4>
+    <a href="orleans.html"><img src="media\orleans.jpg" alt="orleans"></a>
+  </div>
+</div>
+</section>
+
+   <!-----------------------FOOTER---------------------------->  
+   <footer>
+    <div id="deuxiemeTrait"></div>
+    <div id="copyrightEtIcons">
+      <div id="copyright">
+        <span>© fromScratch(); 2022</span>
+      </div>
+      <div id="icons">
+        <a href="http://www.twitter.fr"><i class="fa fa-twitter"></i></a>
+        <a href="http://www.facebook.fr"><i class="fa fa-facebook"></i></a>
+        <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
+
+      </div>
+    </div>
+
+  </footer>
+</body>
+
+</html>

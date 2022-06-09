@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Log'étu</title>
+
+    <link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li id="logo"><a href="index.html">Log'étu</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="connexion.php">Réserver</a></li>
+          <li><a href="index.html#logement">Nos logements</a></li>
+          <li>
+            <input type="search" value="" id="search" onchange="openPage()"placeholder="Saisir une ville">
+            <script>
+              function openPage() {
+                  var x = document.getElementById("search").value;
+              
+                  if (x.toLowerCase() == "paris") {
+                      open("paris.html", "_self");
+                  }
+                   else if (x.toLowerCase() == "marseille") {
+                      open("marseille.html", "_self");
+                  }
+                  else if (x.toLowerCase() == "lyon") {
+                      open("lyon.html", "_self");
+                  }
+                  else if (x.toLowerCase() == "nantes") {
+                      open("nantes.html", "_self");
+                  } else if (x.toLowerCase() == "orleans") {
+                      open("orleans.html", "_self");
+                  }else if (x.toLowerCase == "lille") {
+                      open("lille.html", "_self");
+                  }
+              }
+          </script>
+     </li>
+        </ul>
+      </nav>
+
+<!--------------en-tête-------------------------------->
+      <div id="imgparis">
+        <h3>Trouver un logement étudiant à Paris</h3>
+      </div>
+
+<!-----------------INTRODUCTION DE LA VILLE------------>
+<div id="table2"><p>Paris est l’une des plus grandes villes étudiantes de France, et son statut de capitale rend la recherche de 
+  logement étudiant très compliquée. 
+  Entre prix élevés et places limitées, il est parfois difficile de trouver un appartement étudiant dans la ville de Paris.
+Pour vous aider à trouver votre résidence étudiante, voici une carte des résidences sur Paris. En cliquant sur un point de la carte, 
+vous avez les informations sur la résidence.
+</p></div>
+<!----------------GOOGLE MY MAPS----------------------->      
+      <iframe src="https://www.google.com/maps/d/embed?mid=196V_4GxKWddeafa6AWBSMd8unggeSxo&ehbc=2E312F" width="640" height="480"></iframe>
+
+   <!-----------------------FOOTER---------------------------->  
+   <footer>
+    <div id="deuxiemeTrait"></div>
+    <div id="copyrightEtIcons">
+      <div id="copyright">
+        <span>© fromScratch(); 2022</span>
+      </div>
+      <div id="icons">
+        <a href="http://www.twitter.fr"><i class="fa fa-twitter"></i></a>
+        <a href="http://www.facebook.fr"><i class="fa fa-facebook"></i></a>
+        <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
+
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Log'étu</title>
+
+    <link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li id="logo"><a href="index.html">Log'étu</a></li>
+
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="connexion.php">Réserver</a></li>
+          <li><a href="index.html#logement">Nos logements</a></li>
+          <li>
+            <input type="search" value="" id="search" onchange="openPage()"placeholder="Saisir une ville">
+            <script>
+               function openPage() {
+                  var x = document.getElementById("search").value;
+              
+                  if (x.toLowerCase() == "paris") {
+                      open("paris.html", "_self");
+                  }
+                   else if (x.toLowerCase() == "marseille") {
+                      open("marseille.html", "_self");
+                  }
+                  else if (x.toLowerCase() == "lyon") {
+                      open("lyon.html", "_self");
+                  }
+                  else if (x.toLowerCase() == "nantes") {
+                      open("nantes.html", "_self");
+                  } else if (x.toLowerCase() == "orleans") {
+                      open("orleans.html", "_self");
+                  }else if (x.toLowerCase == "lille") {
+                      open("lille.html", "_self");
+                  }
+              }
+            </script>
+     </li>
+        </ul>
+      </nav>
+<!------------------------------en-tête--------------------------->
+      <div id="imgresidence">
+        <h5>Résidences étudiantes</h5>
+       </div>
+
+<!-------------------------------les +/- --------------------------->
+  <section id="residences">
+   <table>
+     <tr>
+       <td><h6>Le + des résidences étudiantes</h6></td><TD>&nbsp;</TD> 
+       <td><h6>Le - des résidences étudiantes</h6></td></tr>
+       <td width="50%">- logement meublé et équipé
+        <br>- salle d'eau avec WC dans la chambre 
+        <br>- services : accueil, cafétéria, salle d'étude, internet, laverie, service de ménage...
+        <br>- à proximité des universités ou des transports en commun
+        <br>- convivialité</td> <TD>&nbsp;</TD> 
+        <td width="50%">- logement peu personnalisable
+          <br>- moins d'intimité 
+          <br>- plus cher qu'un appartement ou colocation
+          <br>- moins silencieux lors de fêtes </td>
+      </tr>
+  </table> </div2>
+
+  <!----------------------------SITES---------------------------->
+<div2>
+    <h6>
+        Les différentes résidences étudiantes
+    </h6>
+  <div id="table2">
+    <table>
+      <tr><td>Student-factory</td>
+          <td><a href="https://www.student-factory.com/fr"><img src="media\student-factory.PNG" width="100px"></a></td>  
+      </tr>
+      <tr><td>Studelites</td>
+          <td><a href="www.studelites.com/fr"><img src="media\studelites.PNG" width="100px"></a></td>
+      </tr> 
+      <tr><td>les estudines</td>
+          <td><a href="https://www.estudines.com/"><img src="media\les_estudines.PNG" width="100px"></a></td>
+      </tr> 
+      <tr><td>CROUS</td>
+        <td><a href="https://trouverunlogement.lescrous.fr/"><img src="media\crous.PNG" width="100px"></a></td>
+    </tr>
+    
+    <tr><td>Studently</td>
+      <td><a href="https://www.studently.fr/"><img src="media\studently.PNG" width="100px"></a></td>
+  </tr>
+  <tr><td>Les Belles Années</td>
+    <td><a href="https://www.lesbellesannees.com/"><img src="media\les belles années.PNG" width="100px"></a></td>
+  </tr>
+  <tr><td>Twenty Campus</td>
+    <td><a href="https://www.twenty-campus.com/fr"><img src="media\twenty-campus.PNG" width="100px"></a></td>
+  </tr>
+  </table>
+</div>
+<div id="table1">
+    <table>
+      <tr><td>nexity-studea</td>
+          <td><a href="https://www.nexity-studea.com/"><img src="media\studea.PNG" width="100px"></a></td>  
+      </tr>
+      <tr><td>Odalys-Campus</td>
+          <td><a href="https://www.odalys-campus.com/"><img src="media\odalys.PNG" width="100px"></a></td>
+      </tr> 
+      <tr><td>youfirst campus</td>
+          <td><a href="https://campus.youfirst.co/fr"><img src="media\youfirst campus.PNG" width="100px"></a></td>
+      </tr> 
+      <tr><td>KLEY</td>
+        <td><a href="https://www.kley.fr/"><img src="media\kley.PNG" width="100px"></a></td>
+    </tr>
+    <tr><td>Fac-habitat</td>
+      <td><a href="https://www.fac-habitat.com/fr/"><img src="media\fac-habitat.PNG" width="100px"></a></td>
+  </tr>
+  <tr><td>Résidence étudiante</td>
+    <td><a href="https://www.residenceetudiante.fr/"><img src="media\residence-etudiante.PNG" width="100px"></a></td>
+</tr>
+<tr><td>location-etudiant</td>
+  <td><a href="https://www.location-etudiant.fr/"><img src="media\location-etudiante.PNG" width="100px"></a></td>
+</tr>
+<tr><td>logifac</td>
+  <td><a href="https://www.logifac.fr/trouvez-votre-logement/"><img src="media\logifac.PNG" width="50px"></a></td>
+</tr>
+<tr><td>studylease (site de recherche)</td>
+  <td><a href="https://www.studylease.com/"><img src="media\studylease.PNG" width="100px"></a></td>
+</tr>
+  </table>
+</div>
+ 
+</section>
+</header>
+
+<!-------------------VILLES------------------------------>
+<section id="presentation">
+  <div id="texteIntro">
+    <h2>Votre logement étudiant en France</h2>
+    </div>
+  <div id="prestations">
+    <div class="imagesPrestations">
+      <h4>Paris</h4>
+      <a href="paris.html"><img src="media\paris.jpg" alt="paris"></a>
+    </div>
+    <div class="imagesPrestations">
+      <h4>Marseille</h4>
+      <a href="marseille.html"><img src="media\marseille-france.webp" alt="marseille"></a>
+    </div>
+    <div class="imagesPrestations">
+      <h4>Lyon</h4>
+      <a href="lyon.html"><img src="media\lyon.jpg" alt="lyon"></a>
+    </div> 
+    <div class="imagesPrestations">
+      <h4>Nantes</h4>
+      <a href="nantes.html"><img src="media\nantes.jpg" alt="nantes"></a>
+    </div>
+    <div class="imagesPrestations">
+      <h4>Lille</h4>
+      <a href="lille.html"><img src="media\lille.jpg" alt="lille"></a>
+    </div>
+    <div class="imagesPrestations">
+      <h4>Orléans</h4>
+      <a href="orleans.html"><img src="media\orleans.jpg" alt="orleans"></a>
+    </div>
+  </div>
+
+
+  <!-----------------------FOOTER---------------------------->  
+  <footer>
+    <div id="deuxiemeTrait"></div>
+    <div id="copyrightEtIcons">
+      <div id="copyright">
+        <span>© fromScratch(); 2022</span>
+      </div>
+      <div id="icons">
+        <a href="http://www.twitter.fr"><i class="fa fa-twitter"></i></a>
+        <a href="http://www.facebook.fr"><i class="fa fa-facebook"></i></a>
+        <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
+
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
